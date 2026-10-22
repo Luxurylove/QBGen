@@ -1,0 +1,27 @@
+{
+	"bsonType": "object",
+	"required": ["name"],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": { "description": "分类ID" },
+		"name": {
+			"bsonType": "string",
+			"description": "分类/知识点名称",
+			"minLength": 1,
+			"maxLength": 32
+		},
+		"description": {
+			"bsonType": "string",
+			"description": "分类说明"
+		},
+		"sort": {
+			"bsonType": "int",
+			"description": "排序号"
+		}
+	}
+}

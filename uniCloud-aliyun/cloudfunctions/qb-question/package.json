@@ -1,0 +1,9 @@
+{
+	"name": "qb-question",
+	"version": "1.0.0",
+	"description": "题库试题管理",
+	"main": "index.obj.js",
+	"dependencies": {
+		"qb-common": "file:../common/qb-common"
+	}
+}

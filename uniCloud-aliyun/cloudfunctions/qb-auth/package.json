@@ -1,0 +1,9 @@
+{
+	"name": "qb-auth",
+	"version": "1.0.0",
+	"description": "登录认证",
+	"main": "index.obj.js",
+	"dependencies": {
+		"qb-common": "file:../common/qb-common"
+	}
+}

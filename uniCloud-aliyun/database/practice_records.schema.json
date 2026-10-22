@@ -1,0 +1,32 @@
+{
+	"bsonType": "object",
+	"required": ["student_id", "question_id", "is_correct"],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": { "description": "练习记录ID" },
+		"student_id": {
+			"bsonType": "string",
+			"description": "学生ID"
+		},
+		"question_id": {
+			"bsonType": "string",
+			"description": "试题ID"
+		},
+		"user_answer": {
+			"description": "学生答案"
+		},
+		"is_correct": {
+			"bsonType": "bool",
+			"description": "是否答对"
+		},
+		"created_at": {
+			"bsonType": "timestamp",
+			"description": "作答时间"
+		}
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"name": "qb-common",
+	"version": "1.0.0",
+	"description": "QBGen 云对象公共模块",
+	"main": "index.js"
+}

@@ -1,0 +1,9 @@
+{
+	"name": "qb-init",
+	"version": "1.0.0",
+	"description": "演示数据初始化",
+	"main": "index.obj.js",
+	"dependencies": {
+		"qb-common": "file:../common/qb-common"
+	}
+}

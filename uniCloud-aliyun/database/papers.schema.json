@@ -1,0 +1,52 @@
+{
+	"bsonType": "object",
+	"required": ["title", "questions", "total_score"],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": { "description": "试卷ID" },
+		"title": {
+			"bsonType": "string",
+			"description": "试卷标题"
+		},
+		"questions": {
+			"bsonType": "array",
+			"description": "试卷题目清单",
+			"items": {
+				"bsonType": "object",
+				"properties": {
+					"question_id": { "bsonType": "string" },
+					"score": { "bsonType": "int" }
+				}
+			}
+		},
+		"total_score": {
+			"bsonType": "int",
+			"description": "试卷总分"
+		},
+		"duration": {
+			"bsonType": "int",
+			"description": "考试时长（分钟）"
+		},
+		"pass_score": {
+			"bsonType": "int",
+			"description": "及格分数"
+		},
+		"gen_config": {
+			"bsonType": "object",
+			"description": "自动组卷条件快照"
+		},
+		"created_by": {
+			"bsonType": "string",
+			"description": "组卷人ID"
+		},
+		"created_at": {
+			"bsonType": "timestamp",
+			"description": "创建时间"
+		}
+	}
+}

@@ -1,0 +1,70 @@
+{
+	"bsonType": "object",
+	"required": ["exam_id", "paper_id", "student_id", "answers", "status"],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": { "description": "答卷记录ID" },
+		"exam_id": {
+			"bsonType": "string",
+			"description": "考试ID"
+		},
+		"paper_id": {
+			"bsonType": "string",
+			"description": "试卷ID"
+		},
+		"student_id": {
+			"bsonType": "string",
+			"description": "学生ID"
+		},
+		"answers": {
+			"bsonType": "array",
+			"description": "作答内容",
+			"items": {
+				"bsonType": "object",
+				"properties": {
+					"question_id": { "bsonType": "string" },
+					"user_answer": { "description": "学生答案，结构与题目answer一致" },
+					"score": { "bsonType": "int", "description": "本题得分" }
+				}
+			}
+		},
+		"objective_score": {
+			"bsonType": "int",
+			"description": "客观题得分（自动评分）"
+		},
+		"subjective_score": {
+			"bsonType": "int",
+			"description": "主观题得分（教师阅卷）"
+		},
+		"total_score": {
+			"bsonType": "int",
+			"description": "总得分"
+		},
+		"status": {
+			"bsonType": "string",
+			"description": "submitted已交卷待阅卷 / graded已出分",
+			"enum": ["submitted", "graded"]
+		},
+		"comment": {
+			"bsonType": "string",
+			"description": "教师评语"
+		},
+		"submit_time": {
+			"bsonType": "timestamp",
+			"description": "交卷时间"
+		},
+		"graded_by": {
+			"bsonType": "string",
+			"description": "阅卷人ID"
+		},
+		"graded_at": {
+			"bsonType": "timestamp",
+			"description": "阅卷时间"
+		}
+	}
+}

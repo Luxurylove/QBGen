@@ -1,0 +1,9 @@
+{
+	"name": "qb-practice",
+	"version": "1.0.0",
+	"description": "在线练习与错题本",
+	"main": "index.obj.js",
+	"dependencies": {
+		"qb-common": "file:../common/qb-common"
+	}
+}

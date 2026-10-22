@@ -1,0 +1,9 @@
+unpackage/
+.DS_Store
+.hbuilderx/
+.trae/
+.vite/
+node_modules/
+logs/
+*.log
+uniCloud-aliyun/config.json

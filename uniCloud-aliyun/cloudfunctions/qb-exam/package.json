@@ -1,0 +1,9 @@
+{
+	"name": "qb-exam",
+	"version": "1.0.0",
+	"description": "考试发布与管理",
+	"main": "index.obj.js",
+	"dependencies": {
+		"qb-common": "file:../common/qb-common"
+	}
+}

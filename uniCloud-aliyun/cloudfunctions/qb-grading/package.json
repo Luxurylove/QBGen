@@ -1,0 +1,9 @@
+{
+	"name": "qb-grading",
+	"version": "1.0.0",
+	"description": "在线阅卷",
+	"main": "index.obj.js",
+	"dependencies": {
+		"qb-common": "file:../common/qb-common"
+	}
+}

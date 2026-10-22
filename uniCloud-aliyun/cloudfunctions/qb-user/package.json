@@ -1,0 +1,9 @@
+{
+	"name": "qb-user",
+	"version": "1.0.0",
+	"description": "用户管理（管理员）",
+	"main": "index.obj.js",
+	"dependencies": {
+		"qb-common": "file:../common/qb-common"
+	}
+}

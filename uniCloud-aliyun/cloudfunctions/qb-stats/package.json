@@ -1,0 +1,9 @@
+{
+	"name": "qb-stats",
+	"version": "1.0.0",
+	"description": "数据统计",
+	"main": "index.obj.js",
+	"dependencies": {
+		"qb-common": "file:../common/qb-common"
+	}
+}

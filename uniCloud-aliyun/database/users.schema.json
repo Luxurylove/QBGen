@@ -1,0 +1,36 @@
+{
+	"bsonType": "object",
+	"required": ["username", "password", "name", "role"],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": { "description": "用户ID，系统自动生成" },
+		"username": {
+			"bsonType": "string",
+			"description": "登录账号，唯一",
+			"minLength": 2,
+			"maxLength": 32
+		},
+		"password": {
+			"bsonType": "string",
+			"description": "登录密码"
+		},
+		"name": {
+			"bsonType": "string",
+			"description": "姓名"
+		},
+		"role": {
+			"bsonType": "string",
+			"description": "角色",
+			"enum": ["student", "teacher", "admin"]
+		},
+		"created_at": {
+			"bsonType": "timestamp",
+			"description": "创建时间"
+		}
+	}
+}

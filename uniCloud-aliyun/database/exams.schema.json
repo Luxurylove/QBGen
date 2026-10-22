@@ -1,0 +1,42 @@
+{
+	"bsonType": "object",
+	"required": ["paper_id", "title", "start_time", "end_time"],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": { "description": "考试ID" },
+		"paper_id": {
+			"bsonType": "string",
+			"description": "关联试卷ID"
+		},
+		"title": {
+			"bsonType": "string",
+			"description": "考试名称"
+		},
+		"start_time": {
+			"bsonType": "timestamp",
+			"description": "开始时间"
+		},
+		"end_time": {
+			"bsonType": "timestamp",
+			"description": "结束时间"
+		},
+		"status": {
+			"bsonType": "string",
+			"description": "状态：published已发布 closed已关闭",
+			"enum": ["published", "closed"]
+		},
+		"created_by": {
+			"bsonType": "string",
+			"description": "发布人ID"
+		},
+		"created_at": {
+			"bsonType": "timestamp",
+			"description": "创建时间"
+		}
+	}
+}

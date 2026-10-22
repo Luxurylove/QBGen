@@ -1,0 +1,119 @@
+{
+	"pages": [
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "在线题库与考试系统"
+			}
+		},
+		{
+			"path": "pages/profile/profile",
+			"style": {
+				"navigationBarTitleText": "个人信息"
+			}
+		},
+		{
+			"path": "pages/student/exam-list/exam-list",
+			"style": {
+				"navigationBarTitleText": "考试列表"
+			}
+		},
+		{
+			"path": "pages/student/take-exam/take-exam",
+			"style": {
+				"navigationBarTitleText": "在线答题"
+			}
+		},
+		{
+			"path": "pages/student/exam-result/exam-result",
+			"style": {
+				"navigationBarTitleText": "成绩详情"
+			}
+		},
+		{
+			"path": "pages/student/my-scores/my-scores",
+			"style": {
+				"navigationBarTitleText": "我的成绩"
+			}
+		},
+		{
+			"path": "pages/student/practice/practice",
+			"style": {
+				"navigationBarTitleText": "在线练习"
+			}
+		},
+		{
+			"path": "pages/teacher/question-bank/question-bank",
+			"style": {
+				"navigationBarTitleText": "题库管理"
+			}
+		},
+		{
+			"path": "pages/teacher/question-edit/question-edit",
+			"style": {
+				"navigationBarTitleText": "编辑试题"
+			}
+		},
+		{
+			"path": "pages/teacher/category-manage/category-manage",
+			"style": {
+				"navigationBarTitleText": "分类管理"
+			}
+		},
+		{
+			"path": "pages/teacher/paper-gen/paper-gen",
+			"style": {
+				"navigationBarTitleText": "自动组卷"
+			}
+		},
+		{
+			"path": "pages/teacher/paper-list/paper-list",
+			"style": {
+				"navigationBarTitleText": "试卷管理"
+			}
+		},
+		{
+			"path": "pages/teacher/exam-manage/exam-manage",
+			"style": {
+				"navigationBarTitleText": "考试管理"
+			}
+		},
+		{
+			"path": "pages/teacher/grading-list/grading-list",
+			"style": {
+				"navigationBarTitleText": "阅卷列表"
+			}
+		},
+		{
+			"path": "pages/teacher/grading-detail/grading-detail",
+			"style": {
+				"navigationBarTitleText": "在线阅卷"
+			}
+		},
+		{
+			"path": "pages/admin/users/users",
+			"style": {
+				"navigationBarTitleText": "用户管理"
+			}
+		},
+		{
+			"path": "pages/admin/stats/stats",
+			"style": {
+				"navigationBarTitleText": "数据统计"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "在线题库与考试系统",
+		"navigationBarBackgroundColor": "#3B7CFF",
+		"backgroundColor": "#F4F6FA"
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"bsonType": "object",
+	"required": ["category_id", "type", "difficulty", "stem", "answer"],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": { "description": "试题ID" },
+		"category_id": {
+			"bsonType": "string",
+			"description": "所属分类ID"
+		},
+		"type": {
+			"bsonType": "string",
+			"description": "题型：single单选 multiple多选 judge判断 fill填空 essay简答",
+			"enum": ["single", "multiple", "judge", "fill", "essay"]
+		},
+		"difficulty": {
+			"bsonType": "int",
+			"description": "难度：1简单 2中等 3困难",
+			"minimum": 1,
+			"maximum": 3
+		},
+		"stem": {
+			"bsonType": "string",
+			"description": "题干"
+		},
+		"options": {
+			"bsonType": "array",
+			"description": "选项（单选/多选用），如 [{key:'A',text:'...'}]",
+			"items": {
+				"bsonType": "object",
+				"properties": {
+					"key": { "bsonType": "string" },
+					"text": { "bsonType": "string" }
+				}
+			}
+		},
+		"answer": {
+			"description": "参考答案：单选为'A'，多选为['A','C']，判断为'对'/'错'，填空/简答为文本"
+		},
+		"analysis": {
+			"bsonType": "string",
+			"description": "答案解析"
+		},
+		"score": {
+			"bsonType": "int",
+			"description": "默认分值"
+		},
+		"created_by": {
+			"bsonType": "string",
+			"description": "录入人ID"
+		},
+		"created_at": {
+			"bsonType": "timestamp",
+			"description": "创建时间"
+		}
+	}
+}

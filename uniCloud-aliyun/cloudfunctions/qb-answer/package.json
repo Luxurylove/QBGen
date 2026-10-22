@@ -1,0 +1,9 @@
+{
+	"name": "qb-answer",
+	"version": "1.0.0",
+	"description": "学生在线答题与交卷判分",
+	"main": "index.obj.js",
+	"dependencies": {
+		"qb-common": "file:../common/qb-common"
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"bsonType": "object",
+	"required": ["student_id", "question_id"],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": { "description": "错题记录ID" },
+		"student_id": {
+			"bsonType": "string",
+			"description": "学生ID"
+		},
+		"question_id": {
+			"bsonType": "string",
+			"description": "试题ID"
+		},
+		"wrong_count": {
+			"bsonType": "int",
+			"description": "累计答错次数"
+		},
+		"last_wrong_at": {
+			"bsonType": "timestamp",
+			"description": "最近答错时间"
+		}
+	}
+}

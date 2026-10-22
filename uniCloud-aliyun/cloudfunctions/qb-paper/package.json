@@ -1,0 +1,9 @@
+{
+	"name": "qb-paper",
+	"version": "1.0.0",
+	"description": "试卷管理与自动组卷",
+	"main": "index.obj.js",
+	"dependencies": {
+		"qb-common": "file:../common/qb-common"
+	}
+}
